@@ -1,10 +1,10 @@
 FROM node:alpine
 
-WORKDIR /app
+WORKDIR /var/www/app
 
 COPY . .
 
-ENV PATH /app/node_modules/.bin:$PATH
+ENV PATH /var/www/app/node_modules/.bin:$PATH
 
 RUN npm install
 
